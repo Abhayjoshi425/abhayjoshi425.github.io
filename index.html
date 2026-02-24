@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Abhay Joshi – Fresher .NET Developer | ASP.NET Core MVC | SQL Server | C# | Entity Framework Core" />
+    <meta name="keywords" content="Abhay Joshi, .NET Developer, ASP.NET Core MVC, SQL Server, C#, EF Core, Portfolio" />
+    <meta name="author" content="Abhay Joshi" />
+    <title>Abhay Joshi | .NET Developer</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════
+     NAV
+══════════════════════════════════════ -->
+    <nav id="navbar" class="navbar navbar-expand-lg py-2">
+        <div class="container">
+            <a class="navbar-brand" href="#home">&lt;Abhay Joshi /&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn-prim" href="resume/Abhay_Joshi_Resume.pdf" download
+                            style="padding:9px 20px;font-size:.82rem;">
+                            <i class="fas fa-file-arrow-down"></i> Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+    <section id="home">
+        <!-- Background -->
+        <div class="hero-bg">
+            <div class="hero-orb orb1"></div>
+            <div class="hero-orb orb2"></div>
+            <div class="hero-grid"></div>
+        </div>
+
+        <div class="container position-relative" style="z-index:2">
+            <div class="row align-items-center g-5" style="padding:80px 0 60px">
+
+                <!-- Text -->
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <p class="greeting"><i class="fas fa-terminal me-1"></i> Hello, World!</p>
+                    <h1 class="hero-name">
+                        I'm <span>Abhay Joshi</span>
+                    </h1>
+                    <div class="typing-wrap">
+                        <span class="typing-text" id="typingText"></span><span class="cursor"></span>
+                    </div>
+                    <p class="hero-tag">
+                        Building <strong>scalable, secure web applications</strong> using the Microsoft .NET ecosystem —
+                        ASP.NET Core MVC, Entity Framework Core, C#, and SQL Server.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="resume/Abhay_Joshi_Resume.pdf" class="btn-prim" download>
+                            <i class="fas fa-file-arrow-down"></i> Download Resume
+                        </a>
+                        <a href="resume/Abhay_Joshi_Resume.pdf" target="_blank" class="btn-out">
+                            <i class="fas fa-eye"></i> View Resume
+                        </a>
+                        <a href="https://github.com/Abhayjoshi425" target="_blank" class="btn-ghost">
+                            <i class="fab fa-github"></i> GitHub Profile
+                        </a>
+                    </div>
+                    <!-- tech badges -->
+                    <div class="hero-badges">
+                        <span class="hbadge"><span class="dot dot-b"></span>ASP.NET Core MVC</span>
+                        <span class="hbadge"><span class="dot dot-c"></span>Entity Framework Core</span>
+                        <span class="hbadge"><span class="dot dot-b"></span>SQL Server</span>
+                        <span class="hbadge"><span class="dot dot-g"></span>C#</span>
+                        <span class="hbadge"><span class="dot dot-c"></span>Bootstrap 5</span>
+                    </div>
+                </div>
+
+                <!-- Avatar -->
+                <div class="col-lg-5 order-1 order-lg-2 text-center">
+                    <div class="avatar-wrap mx-auto">
+                        <div class="avatar-ring"></div>
+                        <img src="images/profile.jpg" class="avatar-svg" alt="Abhay Joshi" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+    <section id="about" class="sec">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="pill"><i class="fas fa-user me-1"></i>About Me</span>
+                <h2 class="sec-title">About Me</h2>
+                <div class="sec-line"></div>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <!-- Summary -->
+                <div class="col-lg-7">
+                    <div class="about-box reveal">
+                        <p class="about-text">
+                            I'm <strong style="color:var(--primary)">Abhay Joshi</strong>, a fresher <strong>Software
+                                Developer Trainee</strong>
+                            at <strong style="color:var(--accent)">PI CODE</strong>, specializing in
+                            <strong>ASP.NET Core MVC</strong> web application development.
+                            I build full-stack solutions using <strong>C#</strong>, <strong>Entity Framework
+                                Core</strong>,
+                            and <strong>SQL Server</strong> — from database schema design to responsive,
+                            Bootstrap-powered frontends.
+                        </p>
+                        <p class="about-text">
+                            I implement secure <strong>Authentication &amp; Authorization</strong> using ASP.NET Core
+                            Identity and
+                            role-based access control, and I'm skilled at translating business requirements into clean,
+                            maintainable code. I collaborate using <strong>Git &amp; GitHub</strong> and take pride in
+                            well-structured, readable code.
+                        </p>
+                        <!-- Quick info chips -->
+                        <div class="ainfo">
+                            <div class="ainfo-item"><i class="fas fa-briefcase"></i>Software Developer Trainee @ PI CODE
+                            </div>
+                            <div class="ainfo-item"><i class="fas fa-map-marker-alt"></i>Gujarat, India</div>
+                            <div class="ainfo-item"><i class="fas fa-code"></i>ASP.NET Core MVC</div>
+                            <div class="ainfo-item"><i class="fas fa-circle"
+                                    style="color:#22c55e;font-size:.45rem;"></i>Open to Opportunities</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="col-lg-5">
+                    <div class="about-box reveal d2" style="height:100%">
+                        <h6 style="font-weight:700;color:var(--text-1);margin-bottom:18px;">
+                            <i class="fas fa-graduation-cap me-2" style="color:var(--primary)"></i>Education
+                        </h6>
+                        <div class="edu-row">
+                            <div class="edu-card">
+                                <div class="edu-icon"><i class="fas fa-university"></i></div>
+                                <div>
+                                    <div class="edu-deg">Master of Computer Application</div>
+                                    <div class="edu-col">SCET College &nbsp;·&nbsp; MCA</div>
+                                </div>
+                            </div>
+                            <div class="edu-card">
+                                <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+                                <div>
+                                    <div class="edu-deg">Bachelor of Computer Application</div>
+                                    <div class="edu-col">C.B. Patel Computer College &nbsp;·&nbsp; BCA</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key strengths list -->
+                        <div class="mt-4">
+                            <h6 style="font-weight:700;color:var(--text-1);margin-bottom:12px;font-size:.85rem;">
+                                <i class="fas fa-star me-2" style="color:var(--accent)"></i>Core Strengths
+                            </h6>
+                            <div class="d-flex flex-column gap-2">
+                                <div
+                                    style="display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--text-2)">
+                                    <i class="fas fa-check-circle"
+                                        style="color:var(--primary);font-size:.8rem"></i>ASP.NET Core MVC &amp; EF Core
+                                    Development
+                                </div>
+                                <div
+                                    style="display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--text-2)">
+                                    <i class="fas fa-check-circle" style="color:var(--primary);font-size:.8rem"></i>SQL
+                                    Server Database Design &amp; T-SQL
+                                </div>
+                                <div
+                                    style="display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--text-2)">
+                                    <i class="fas fa-check-circle"
+                                        style="color:var(--primary);font-size:.8rem"></i>Authentication &amp; Role-Based
+                                    Access Control
+                                </div>
+                                <div
+                                    style="display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--text-2)">
+                                    <i class="fas fa-check-circle"
+                                        style="color:var(--primary);font-size:.8rem"></i>Responsive UI with Bootstrap 5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     SKILLS
+══════════════════════════════════════ -->
+    <section id="skills" class="sec">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="pill"><i class="fas fa-tools me-1"></i>Skills</span>
+                <h2 class="sec-title">Technical Skills</h2>
+                <div class="sec-line"></div>
+                <p class="sec-sub">Technologies I use to build professional .NET web applications</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Backend -->
+                <div class="col-lg-6">
+                    <div class="skills-card reveal">
+                        <div class="cat-title"><i class="fas fa-server"></i>Backend</div>
+
+                        <div class="skill-item">
+                            <div class="skill-name"><span>ASP.NET Core MVC</span><span class="skill-pct">90%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" data-w="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>C#</span><span class="skill-pct">88%</span></div>
+                            <div class="bar">
+                                <div class="fill" data-w="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Entity Framework Core</span><span class="skill-pct">85%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" data-w="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>SQL Server</span><span class="skill-pct">83%</span></div>
+                            <div class="bar">
+                                <div class="fill" data-w="83"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Authentication &amp; Authorization</span><span
+                                    class="skill-pct">80%</span></div>
+                            <div class="bar">
+                                <div class="fill" data-w="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend + Tools -->
+                <div class="col-lg-6 d-flex flex-column gap-4">
+                    <div class="skills-card reveal d2">
+                        <div class="cat-title"><i class="fas fa-palette"></i>Frontend</div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>HTML5 &amp; CSS3</span><span class="skill-pct">90%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" data-w="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>JavaScript</span><span class="skill-pct">74%</span></div>
+                            <div class="bar">
+                                <div class="fill" data-w="74"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name"><span>Bootstrap 5</span><span class="skill-pct">88%</span></div>
+                            <div class="bar">
+                                <div class="fill" data-w="88"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-card reveal d3">
+                        <div class="cat-title"><i class="fas fa-wrench"></i>Tools &amp; Workflow</div>
+                        <div class="tool-wrap">
+                            <div class="chip"><i class="fab fa-git-alt" style="color:#f05032"></i>Git</div>
+                            <div class="chip"><i class="fab fa-github"></i>GitHub</div>
+                            <div class="chip"><i class="fas fa-code-branch" style="color:var(--primary)"></i>Visual
+                                Studio 2022</div>
+                            <div class="chip"><i class="fas fa-database" style="color:#e8912d"></i>SSMS</div>
+                            <div class="chip"><i class="fas fa-project-diagram" style="color:var(--accent)"></i>MVC
+                                Architecture</div>
+                            <div class="chip"><i class="fas fa-layer-group" style="color:var(--primary)"></i>EF Core
+                                Migrations</div>
+                            <div class="chip"><i class="fas fa-shield-alt" style="color:#22c55e"></i>ASP.NET Identity
+                            </div>
+                            <div class="chip"><i class="fas fa-sitemap" style="color:var(--accent)"></i>LINQ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     EXPERIENCE
+══════════════════════════════════════ -->
+    <section id="experience" class="sec">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="pill"><i class="fas fa-briefcase me-1"></i>Experience</span>
+                <h2 class="sec-title">Experience</h2>
+                <div class="sec-line"></div>
+            </div>
+
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-9">
+                    <div class="exp-card reveal">
+                        <div class="exp-head">
+                            <div>
+                                <div class="exp-role">Software Developer Trainee</div>
+                                <div class="exp-company"><i class="fas fa-building me-1"></i>PI CODE</div>
+                            </div>
+                            <span class="exp-date"><i class="fas fa-calendar-alt me-1"></i>2024 – Present</span>
+                        </div>
+
+                        <ul class="exp-points">
+                            <li>Developing real-time <strong>ASP.NET Core MVC</strong> web applications — handling
+                                end-to-end development from database schema design to responsive UI using Bootstrap 5
+                                and Razor Views.</li>
+                            <li>Designing and integrating <strong>SQL Server databases</strong> with Entity Framework
+                                Core (Code-First, migrations, LINQ queries) and implementing <strong>authentication
+                                    &amp; role-based authorization</strong> using ASP.NET Core Identity.</li>
+                            <li>Collaborating with the team using <strong>Git &amp; GitHub</strong> for version control,
+                                code reviews, and maintaining clean, maintainable C# code across full CRUD application
+                                workflows.</li>
+                        </ul>
+
+                        <div class="tag-wrap">
+                            <span class="tag">ASP.NET Core MVC</span>
+                            <span class="tag">Entity Framework Core</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Bootstrap 5</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Authentication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════ -->
+    <section id="projects" class="sec">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="pill"><i class="fas fa-code me-1"></i>Projects</span>
+                <h2 class="sec-title">Featured Projects</h2>
+                <div class="sec-line"></div>
+                <p class="sec-sub">Real-world applications built with ASP.NET Core MVC and SQL Server</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Project 1 -->
+                <div class="col-lg-6">
+                    <div class="proj-card reveal">
+                        <div class="proj-header">
+                            <div class="proj-header-bg"
+                                style="background:linear-gradient(135deg,#1e293b 0%,#162032 100%)"></div>
+                            <span class="proj-emoji">🏷️</span>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-title">LiveAuctionSystem</div>
+                            <div class="proj-sub">Online Auction Platform</div>
+                            <p class="proj-desc">
+                                A full-featured online auction platform with real-time bidding, countdown timers, and a
+                                multi-role access system for admins, sellers, and bidders — built end-to-end with
+                                ASP.NET Core MVC.
+                            </p>
+                            <ul class="proj-feats">
+                                <li><i class="fas fa-circle-check"></i>Role-based login — Admin, Seller, Bidder</li>
+                                <li><i class="fas fa-circle-check"></i>Real-time auctions with bid tracking &amp; timers
+                                </li>
+                                <li><i class="fas fa-circle-check"></i>ASP.NET Core Identity authentication</li>
+                                <li><i class="fas fa-circle-check"></i>Admin panel for auction &amp; user management
+                                </li>
+                            </ul>
+                            <div class="tech-row">
+                                <span class="tbadge">ASP.NET Core MVC</span>
+                                <span class="tbadge">Entity Framework Core</span>
+                                <span class="tbadge">SQL Server</span>
+                                <span class="tbadge">C#</span>
+                                <span class="tbadge">Bootstrap 5</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-6">
+                    <div class="proj-card reveal d2">
+                        <div class="proj-header">
+                            <div class="proj-header-bg"
+                                style="background:linear-gradient(135deg,#1e293b 0%,#1a1230 100%)"></div>
+                            <span class="proj-emoji">🩸</span>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-title">Blood Community</div>
+                            <div class="proj-sub">Blood Donation Management System</div>
+                            <p class="proj-desc">
+                                A community platform connecting blood donors, hospitals, and recipients — with donor
+                                profiles,
+                                blood inventory tracking, smart search, and an admin dashboard for reporting.
+                            </p>
+                            <ul class="proj-feats">
+                                <li><i class="fas fa-circle-check"></i>Blood donor registration &amp; profile management
+                                </li>
+                                <li><i class="fas fa-circle-check"></i>Search by blood group, city &amp; availability
+                                </li>
+                                <li><i class="fas fa-circle-check"></i>Hospital records &amp; blood bank inventory</li>
+                                <li><i class="fas fa-circle-check"></i>Admin reporting &amp; analytics dashboard</li>
+                            </ul>
+                            <div class="tech-row">
+                                <span class="tbadge">ASP.NET Core MVC</span>
+                                <span class="tbadge">SQL Server</span>
+                                <span class="tbadge">C#</span>
+                                <span class="tbadge">Entity Framework Core</span>
+                                <span class="tbadge">Bootstrap 5</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+    <section id="contact" class="sec">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="pill"><i class="fas fa-envelope me-1"></i>Contact</span>
+                <h2 class="sec-title">Get In Touch</h2>
+                <div class="sec-line"></div>
+                <p class="sec-sub">Open to job opportunities, collaborations, and interesting projects</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Info -->
+                <div class="col-lg-5">
+                    <div class="cinfo-card reveal">
+                        <h6 style="font-weight:700;color:var(--text-1);margin-bottom:18px;">
+                            <i class="fas fa-address-card me-2" style="color:var(--primary)"></i>Contact Details
+                        </h6>
+
+                        <div class="cinfo-item">
+                            <div class="cinfo-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="cinfo-label">Email</div>
+                                <div class="cinfo-value"><a
+                                        href="mailto:abhayjoshi.mca22@scet.ac.in">abhayjoshi.mca22@scet.ac.in</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinfo-item">
+                            <div class="cinfo-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <div class="cinfo-label">Phone</div>
+                                <div class="cinfo-value"><a href="tel:+917069736972">+91 7069736972</a></div>
+                            </div>
+                        </div>
+
+                        <div class="cinfo-item">
+                            <div class="cinfo-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="cinfo-label">Location</div>
+                                <div class="cinfo-value">Gujarat, India</div>
+                            </div>
+                        </div>
+
+                        <div class="cinfo-item">
+                            <div class="cinfo-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <div class="cinfo-label">GitHub</div>
+                                <div class="cinfo-value"><a href="https://github.com/Abhayjoshi425" target="_blank">View
+                                        My GitHub Projects →</a></div>
+                            </div>
+                        </div>
+
+                        <div class="cinfo-item">
+                            <div class="cinfo-icon"><i class="fab fa-linkedin"></i></div>
+                            <div>
+                                <div class="cinfo-label">LinkedIn</div>
+                                <div class="cinfo-value"><a href="https://linkedin.com/in/abhayjoshi"
+                                        target="_blank">linkedin.com/in/abhayjoshi</a></div>
+                            </div>
+                        </div>
+
+                        <div class="social-row">
+                            <a href="https://github.com/Abhayjoshi425" target="_blank" class="soc-btn"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                            <a href="https://linkedin.com/in/abhayjoshi" target="_blank" class="soc-btn"><i
+                                    class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="mailto:abhayjoshi.mca22@scet.ac.in" class="soc-btn"><i class="fas fa-envelope"></i>
+                                Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="col-lg-7">
+                    <div class="cform-card reveal d2">
+                        <h6 style="font-weight:700;color:var(--text-1);margin-bottom:18px;">
+                            <i class="fas fa-paper-plane me-2" style="color:var(--primary)"></i>Send a Message
+                        </h6>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label class="form-label">Name *</label>
+                                    <input type="text" class="form-control" placeholder="Your name" required />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" class="form-control" placeholder="your@email.com" required />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" placeholder="+91 98765 43210" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label">Regarding</label>
+                                    <select class="form-select">
+                                        <option value="" disabled selected>Select topic</option>
+                                        <option>Job Opportunity</option>
+                                        <option>Project Collaboration</option>
+                                        <option>Freelance Work</option>
+                                        <option>General Inquiry</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message *</label>
+                                    <textarea class="form-control" rows="4"
+                                        placeholder="Tell me about the opportunity or project…" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-prim w-100 justify-content-center border-0">
+                                        <i class="fas fa-paper-plane"></i> Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <div>
+                    <div class="ft-brand">&lt;Abhay Joshi /&gt;</div>
+                    <p class="ft-copy mt-1">© 2026 Abhay Joshi. All rights reserved.</p>
+                </div>
+                <div class="ft-social">
+                    <a href="https://github.com/Abhayjoshi425" target="_blank" class="ft-ico" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/abhayjoshi" target="_blank" class="ft-ico" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:abhayjoshi.mca22@scet.ac.in" class="ft-ico" title="Email"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="btt" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
