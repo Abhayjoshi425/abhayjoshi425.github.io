@@ -62,25 +62,50 @@ document.addEventListener('DOMContentLoaded', () => {
   const skillSec = document.getElementById('skills');
   if (skillSec) so.observe(skillSec);
 
-  /* ── Contact form ── */
+  /* ── EmailJS init ── */
+  emailjs.init({ publicKey: 'zDPBIlZZYPqp_q2zM' });
+
+  /* ── Contact form (EmailJS) ── */
   const form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', e => {
       e.preventDefault();
+
       const btn = form.querySelector('[type="submit"]');
       const orig = btn.innerHTML;
       btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending…';
       btn.disabled = true;
-      setTimeout(() => {
-        btn.innerHTML = '<i class="fas fa-check me-2"></i>Sent! I\'ll get back to you soon.';
-        btn.style.background = 'linear-gradient(135deg,#22c55e,#06b6d4)';
-        setTimeout(() => {
-          btn.innerHTML = orig;
-          btn.style.background = '';
-          btn.disabled = false;
+
+      const templateParams = {
+        to_email: 'joshiabhay425@gmail.com',
+        from_name: form.querySelector('[name="name"]').value.trim(),
+        from_email: form.querySelector('[name="email"]').value.trim(),
+        phone: form.querySelector('[name="phone"]').value.trim() || 'Not provided',
+        regarding: form.querySelector('[name="regarding"]').value.trim() || 'General Inquiry',
+        message: form.querySelector('[name="message"]').value.trim(),
+      };
+
+      emailjs.send('service_6m4m166', 'template_1dkzx6a', templateParams)
+        .then(() => {
+          btn.innerHTML = '<i class="fas fa-check me-2"></i>Sent! I\'ll get back to you soon.';
+          btn.style.background = 'linear-gradient(135deg,#22c55e,#06b6d4)';
           form.reset();
-        }, 3000);
-      }, 1800);
+          setTimeout(() => {
+            btn.innerHTML = orig;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 4000);
+        })
+        .catch((err) => {
+          console.error('EmailJS Error:', JSON.stringify(err));
+          btn.innerHTML = '<i class="fas fa-times me-2"></i>Failed – please email me directly.';
+          btn.style.background = 'linear-gradient(135deg,#ef4444,#f97316)';
+          setTimeout(() => {
+            btn.innerHTML = orig;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 4000);
+        });
     });
   }
 
