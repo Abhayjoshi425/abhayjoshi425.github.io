@@ -77,11 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.disabled = true;
 
       const templateParams = {
-        to_email: 'joshiabhay425@gmail.com',
-        from_name: form.querySelector('[name="name"]').value.trim(),
-        from_email: form.querySelector('[name="email"]').value.trim(),
+        name: form.querySelector('[name="name"]').value.trim(),
+        email: form.querySelector('[name="email"]').value.trim(),
         phone: form.querySelector('[name="phone"]').value.trim() || 'Not provided',
-        regarding: form.querySelector('[name="regarding"]').value.trim() || 'General Inquiry',
+        title: form.querySelector('[name="regarding"]').value.trim() || 'General Inquiry',
         message: form.querySelector('[name="message"]').value.trim(),
       };
 
